@@ -1,0 +1,44 @@
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.active_nav_link{
+  .active a,.active a:hover {
+  background-color: #C09448;
+  color: white;
+  border-radius: 17px;
+  }
+}
+.nav.navbar-nav{
+  display: inline-block;
+  float: none;
+  a:hover,a:focus{
+    border-radius: 17px;
+  }
+  a{
+    color: black;
+    font-family: 'Heebo' ;
+  }
+}
+@media screen and (min-width: 980px) {
+  .navbar li {
+    margin-right: 45px;
+    margin-left: 45px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .navbar li {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.navbar-toggle  {
+  background-color: #C59D58;
+}
+
+.icon-bar{
+  background-color: #ffffff;
+}
+
