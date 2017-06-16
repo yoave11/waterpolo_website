@@ -1,4 +1,4 @@
-
+@import "../../variables";
 .navbar .navbar-collapse {
   text-align: center;
 
@@ -16,12 +16,14 @@
     border-color: #7d797f;
     border-style: solid;
     border-width: 1px;
+    margin: 11px 0;
   }
 }
 
+
 .active_nav_link {
   .active a, .active a:hover {
-    background-color: #C09448;
+    background-color: $primary-color;
     color: white;
     border-radius: 17px;
   }
@@ -34,34 +36,18 @@
     border-radius: 17px;
   }
   a {
-    color: black;
-    font-family: 'Heebo';
+    color: $text-dark;
+    font-family: $font-family;
   }
 }
-
-@media screen and (min-width: 980px) {
-  .navbar li {
-    margin-right: 45px;
-    margin-left: 45px;
-  }
+.navbar li {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-@media screen and (max-width: 980px) {
-  .navbar li {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-
-  .navbar-brand img {
-    height: 8vh;
-    margin-bottom: 1px;
-    margin-top: 1px;
-  }
-
-}
 
 .navbar-toggle {
-  background-color: #C59D58;
+  background-color: $primary-color;
   margin-bottom: 20px;
   margin-top: 20px;
 
@@ -70,4 +56,6 @@
 .icon-bar {
   background-color: #ffffff;
 }
+
+
 

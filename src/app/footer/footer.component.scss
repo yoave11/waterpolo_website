@@ -1,0 +1,41 @@
+@import '../../variables';
+
+.footer {
+  background-color: $primary-color;
+  //position: fixed;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 40px;
+  padding: 0 40px;
+
+  .footer-box {
+    text-align: center;
+    font: 1em $font-family;
+    //font-family: $font-family;
+    color: $text-light;
+    flex: 0 1 200px;
+    margin: 10px 10px;
+  }
+}
+
+.fa {
+  border: 1.5px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px 0;
+
+}
+
+@media screen and (max-width: 700px){
+  .footer-box{
+    //span{
+    //  display: none;
+    //}
+  }
+}
