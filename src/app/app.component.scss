@@ -1,10 +1,12 @@
 @import '../variables';
 
 .app-container {
-  //max-width: $mobile-width;
-  //margin: auto;
-  //border-left: 1px solid $primary-color;
-  //border-right: 1px solid $primary-color;
+  max-width: 1300px;
+  background-color: white;
+  margin: auto;
+  border-left: 1px solid $primary-color;
+  border-right: 1px solid $primary-color;
   height: 100%;
 }
+
 
