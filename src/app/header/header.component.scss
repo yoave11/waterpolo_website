@@ -11,12 +11,12 @@
 
 .navbar-brand {
   img {
-    height: 10vh;
+    height: 60px;
     border-radius: 50%;
     border-color: #7d797f;
     border-style: solid;
     border-width: 1px;
-    margin: 11px 0;
+    margin: 22px 0;
   }
 }
 
@@ -41,15 +41,15 @@
   }
 }
 .navbar li {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 22px 18px;
+  font-size: 1.5em;
 }
 
 
 .navbar-toggle {
   background-color: $primary-color;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
 
 }
 
