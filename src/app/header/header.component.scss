@@ -1,25 +1,39 @@
 @import "../../variables";
+
 .navbar .navbar-collapse {
   text-align: center;
+}
 
+.navbar {
+  margin: 0;
+}
+
+.container-fluid {
+  //background-color: #0e9151;
+
+  //height: 100px;
+  //margin: 30px 0;
+}
+
+.navbar-toggle{
+  //margin: 0 auto ;
 }
 
 .navbar-inner {
-  margin-bottom: 22px;
-  margin-top: 22px;
-}
+  margin: auto 0;
 
-.navbar-brand {
-  img {
-    height: 60px;
-    border-radius: 50%;
-    border-color: #7d797f;
-    border-style: solid;
-    border-width: 1px;
-    margin: 22px 0;
+  ul {
+    margin-top: 20px;
   }
 }
 
+.navbar-brand {
+  margin: 0 0;
+  height: 140px;
+  img {
+    height: 100%;
+  }
+}
 
 .active_nav_link {
   .active a, .active a:hover {
@@ -38,24 +52,41 @@
   a {
     color: $text-dark;
     font-family: $font-family;
+    font-weight: bold;
   }
 }
-.navbar li {
-  margin: 22px 18px;
-  font-size: 1.5em;
+
+.navbar {
+
+  li {
+    margin: 0 18px;
+    font-size: 1.5em;
+  }
 }
-
-
 .navbar-toggle {
   background-color: $primary-color;
-  margin-bottom: 20px;
-  margin-top: 40px;
-
 }
-
-.icon-bar {
+.navbar-header{
+  //margin:-30px  0;
+  height: 100%;
+}
+ .icon-bar {
   background-color: #ffffff;
 }
 
+.navbar-toggle{
+  margin: 30px 15px;
 
+}
 
+@media screen and (max-width: 1000px) {
+  .navbar-brand {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .navbar-brand {
+    padding-top: 20px;
+    //height: 70px;
+  }
+}

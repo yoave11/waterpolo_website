@@ -15,7 +15,7 @@ import { CarouselComponent } from './home/carousel/carousel.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
