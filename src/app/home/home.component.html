@@ -1,5 +1,10 @@
 <polo-carousel></polo-carousel>
-
+<!--<div class="banner">-->
+  <!--<div class="banner-title jumbotron">-->
+    <!--<h1>הפועל יקנעם</h1>-->
+    <!--<img src="/assets/oct12.png" alt="">-->
+  <!--</div>-->
+<!--</div>-->
 <div class="container-fluid">
   <div class="about">
     <div class="text-box">
@@ -19,7 +24,7 @@
 
   <h2>אירועים אחרונים</h2>
   <div class="news-section">
-    <swiper [config]="example1SwipeOptions" >
+    <swiper [config]="example1SwipeOptions">
       <div class="swiper-wrapper">
 
         <div class="news swiper-slide " *ngFor="let event of events">
@@ -38,7 +43,7 @@
           </div>
         </div>
       </div>
-      <div  id='a' class="swiper-pagination" #swiper [hidden]="swiper.children.length == 1" ></div>
+      <div id='a' class="swiper-pagination" #swiper [hidden]="swiper.children.length == 1"></div>
     </swiper>
 
   </div>

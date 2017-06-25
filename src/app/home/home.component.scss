@@ -1,5 +1,37 @@
 @import "../../variables";
-
+//.banner {
+//  height: 80vh;
+//  min-height: 100%;
+//  width: 100%;
+//  background-repeat: no-repeat ;
+//  background-size: cover;
+//  background-position: center ;
+//  background-image: url("/assets/throw.jpg");
+//  //position: relative;
+//  text-align:center;
+//  vertical-align: bottom;
+//  .jumbotron{
+//    display: flex;
+//    justify-content: center;
+//    position: absolute;
+//    bottom:10%;
+//    left:50%;
+//    transform:translateX(-50%);
+//    font-family: $font-family;
+//    //background-color: #2a2a2a;
+//    border-radius: 20px;
+//    background-color: rgba(192, 148, 72, 0.75);
+//  }
+//  h1{
+//    margin: auto;
+//    color: $text-light;
+//    top: 0;
+//  }
+//  img{
+//    width: 100px;
+//    height: 100px;
+//  }
+//}
 .container-fluid {
   font-family: $font-family;
   margin: 10% 0;

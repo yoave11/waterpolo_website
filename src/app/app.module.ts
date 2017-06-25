@@ -11,6 +11,8 @@ import {CarouselComponent} from "./home/carousel/carousel.component";
 import {Parallax} from "ng2-parallax/dist/ts/commonjs/parallax.directive";
 import {PoloEventService} from "./poloevent.service";
 import {SwiperModule} from "angular2-useful-swiper";
+import { AboutComponent } from './about/about.component';
+import {routing} from "../app.routes";
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import {SwiperModule} from "angular2-useful-swiper";
     FooterComponent,
     CarouselComponent,
     Parallax,
+    AboutComponent,
 
 
   ],
@@ -28,6 +31,7 @@ import {SwiperModule} from "angular2-useful-swiper";
     FormsModule,
     HttpModule,
     SwiperModule,
+    routing,
     BrowserAnimationsModule
   ],
   providers: [PoloEventService],

@@ -16,11 +16,11 @@
     <div class="navbar-inner"  >
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav active_nav_link divider-vertical">
-          <li class="active"><a href="#">בית <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">עלינו</a></li>
-          <li><a href="#">משחקים</a></li>
-          <li><a href="#">חדשות</a></li>
-          <li><a href="#">צור קשר</a></li>
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/']">בית <span class="sr-only">(current)</span></a></li>
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/about']">עלינו</a></li>
+          <li routerLinkActive="active"><a href="#">משחקים</a></li>
+          <li routerLinkActive="active"><a href="#">חדשות</a></li>
+          <li routerLinkActive="active"><a href="#">צור קשר</a></li>
 
         </ul>
 
