@@ -6,15 +6,12 @@ import {AppComponent} from "./app.component";
 import {HomeComponent} from "./home/home.component";
 import {HeaderComponent} from "./header/header.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { FooterComponent } from './footer/footer.component';
-import { CarouselComponent } from './home/carousel/carousel.component';
-import {Ng2ParallaxScrollDirective} from "ng2-parallax-scroll";
-import {Parallax, ParallaxConfig} from "ng2-parallax/dist/ts/commonjs/parallax.directive";
-// import {Parallax} from "ng2-parallax/dist/ts/commonjs/parallax.directive";
-// import {NguiModule} from '@ngui/ngui'
-// import {} from "ng2-parallax";
-// import {ng2Parallax} from '../../node_modules/ang2-parallax'
-;
+import {FooterComponent} from "./footer/footer.component";
+import {CarouselComponent} from "./home/carousel/carousel.component";
+import {Parallax} from "ng2-parallax/dist/ts/commonjs/parallax.directive";
+import {PoloEventService} from "./poloevent.service";
+import {SwiperModule} from "angular2-useful-swiper";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,17 +22,17 @@ import {Parallax, ParallaxConfig} from "ng2-parallax/dist/ts/commonjs/parallax.d
     Parallax,
 
 
-
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    // Parallax,
+    SwiperModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [PoloEventService],
   bootstrap: [AppComponent],
 
 })
-export class AppModule { }
+export class AppModule {
+}

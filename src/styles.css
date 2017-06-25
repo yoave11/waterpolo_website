@@ -8,3 +8,7 @@ html, body {
   height: 100%;
   /*background-color: blue;*/
 }
+.swiper-pagination-bullet-active{
+  background: #C09448 !important;
+  opacity: 0.7;
+}

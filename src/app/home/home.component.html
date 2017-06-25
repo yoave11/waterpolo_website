@@ -1,4 +1,5 @@
 <polo-carousel></polo-carousel>
+
 <div class="container-fluid">
   <div class="about">
     <div class="text-box">
@@ -18,67 +19,28 @@
 
   <h2>אירועים אחרונים</h2>
   <div class="news-section">
-    <div class="news">
-      <div class="panel panel-default">
-        <div class="news-img">
-          <img src="../../assets/logo.jpg" class="img-responsive " alt="news">
-        </div>
-        <div class="news-title panel-title">
-          משהו
-        </div>
+    <swiper [config]="example1SwipeOptions" >
+      <div class="swiper-wrapper">
 
-        <div class="panel-body">
-          לאגודות על ידי תגמולן בגיוס ילדות
-          חדשות וכן תגמולד בגילאי 8-14 בקבוצות עצמן.
+        <div class="news swiper-slide " *ngFor="let event of events">
+          <div class="panel panel-default">
+            <div class="news-img">
+              <img [src]="event.image" class="img-responsive " alt="news">
+            </div>
+            <div class="news-title panel-title">
+              {{event.title}}
+            </div>
 
-        </div>
+            <div class="panel-body">
+              {{event.preFix}}
+            </div>
 
-      </div>
-    </div>
-    <div class="news">
-
-
-      <div class="panel panel-default">
-        <div class="news-img">
-          <img src="../../assets/throw.jpg" class="img-responsive" alt="news">
-        </div>
-        <div class="news-title panel-title">
-          משהו
-        </div>
-        <div class="panel-body">לאגודות על ידי תגמולן בגיוס ילדות
-          חר ילדות. הפרויקט מתמקד בגילאי 8-14 בקבוצות עצמן.
-        </div>
-
-      </div>
-    </div>
-    <div class="news">
-      <div class="panel panel-default">
-        <div class="news-img">
-          <img src="../../assets/plate.jpg" class="img-responsive" alt="news">
-        </div>
-        <div class="news-title panel-title">
-          משהו
-        </div>
-        <div class="panel-body">
-          לא תגמולן בגיוס ילדות
-          חדשות וכן תגמולן בשימור ילדות. הפרויקט מתמקד בגילאי 8-14 בקבוצות עצמן.
+          </div>
         </div>
       </div>
-    </div>
-    <div class="news">
-      <div class="panel panel-default">
-        <div class="news-img">
-          <img src="../../assets/team.png" class="img-responsive" alt="news">
-        </div>
-        <div class="news-title panel-title">
-          משהו
-        </div>
-        <div class="panel-body">
-          לאגודות על ידי תגמולן בגיוס ילדות
-          חדשות וכן תגמולן בשימור ילדות. הפרעצמן.
-        </div>
-      </div>
-    </div>
+      <div  id='a' class="swiper-pagination" #swiper [hidden]="swiper.children.length == 1" ></div>
+    </swiper>
+
   </div>
   <button class="btn center-block">לעוד אירועים</button>
 
