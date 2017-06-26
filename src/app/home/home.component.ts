@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   @ViewChild(KSSwiperContainer) swiperContainer: KSSwiperContainer;
   events:PoloEvent[];
   example1SwipeOptions: any;
+  example1SwipeOptions2: any;
 
   constructor(private poloEventService:PoloEventService) { }
 
@@ -22,6 +23,15 @@ export class HomeComponent implements OnInit {
       slidesPerView: 'auto',
       loop: false,
       spaceBetween: 0,
+    };
+    this.example1SwipeOptions2 = {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      slidesPerView: 1,
+      loop: false,
+      spaceBetween: 0,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
     };
   }
 

@@ -1,13 +1,33 @@
-<polo-carousel></polo-carousel>
-<!--<div class="banner">-->
-  <!--<div class="banner-title jumbotron">-->
-    <!--<h1>הפועל יקנעם</h1>-->
-    <!--<img src="/assets/oct12.png" alt="">-->
-  <!--</div>-->
-<!--</div>-->
+
+
+<!--<polo-carousel></polo-carousel>-->
+<!--<h2>אירועים אחרונים</h2>-->
+<div class="news-banner">
+  <swiper [config]="example1SwipeOptions2" class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="news swiper-slide " *ngFor="let event of events">
+          <div class="news-img">
+            <img [src]="event.image" class="img-responsive " alt="news">
+          </div>
+        <div class="jumbotron">
+
+          <h2>{{event.title}}</h2>
+
+          <p>{{event.preFix}}</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <!--<div class="swiper-button-next"></div>-->
+    <!--<div class="swiper-button-prev"></div>-->
+  </swiper>
+</div>
+
 <div class="container-fluid">
   <div class="about">
-    <div class="text-box">
+    <div class="text-box jumbotron">
       <h2>על הפועל יוקנעם</h2>
       <p> פרויקט המשך לפעילות בשנתיים האחרונות באגודות כדורמים ברחבי הארץ וכולל סיוע לאגודות על ידי תגמולן בגיוס ילדות
         חדשות וכן תגמולן בשימור ילדות. הפרויקט מתמקד בגילאי 8-14 בקבוצות עצמן. </p>
@@ -20,34 +40,34 @@
     </div>
   </div>
 
-  <hr>
+  <!--<hr>-->
 
-  <h2>אירועים אחרונים</h2>
-  <div class="news-section">
-    <swiper [config]="example1SwipeOptions">
-      <div class="swiper-wrapper">
+  <!--<h2>אירועים אחרונים</h2>-->
+  <!--<div class="news-section">-->
+    <!--<swiper [config]="example1SwipeOptions">-->
+      <!--<div class="swiper-wrapper">-->
 
-        <div class="news swiper-slide " *ngFor="let event of events">
-          <div class="panel panel-default">
-            <div class="news-img">
-              <img [src]="event.image" class="img-responsive " alt="news">
-            </div>
-            <div class="news-title panel-title">
-              {{event.title}}
-            </div>
+        <!--<div class="news swiper-slide " *ngFor="let event of events">-->
+          <!--<div class="panel panel-default">-->
+            <!--<div class="news-img">-->
+              <!--<img [src]="event.image" class="img-responsive " alt="news">-->
+            <!--</div>-->
+            <!--<div class="news-title panel-title">-->
+              <!--{{event.title}}-->
+            <!--</div>-->
 
-            <div class="panel-body">
-              {{event.preFix}}
-            </div>
+            <!--<div class="panel-body">-->
+              <!--{{event.preFix}}-->
+            <!--</div>-->
 
-          </div>
-        </div>
-      </div>
-      <div id='a' class="swiper-pagination" #swiper [hidden]="swiper.children.length == 1"></div>
-    </swiper>
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div id='a' class="swiper-pagination" #swiper [hidden]="swiper.children.length == 1"></div>-->
+    <!--</swiper>-->
 
-  </div>
-  <button class="btn center-block">לעוד אירועים</button>
+  <!--</div>-->
+  <!--<button class="btn center-block">לעוד אירועים</button>-->
 
   <hr>
 

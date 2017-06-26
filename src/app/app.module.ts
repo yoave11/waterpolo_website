@@ -13,6 +13,7 @@ import {PoloEventService} from "./poloevent.service";
 import {SwiperModule} from "angular2-useful-swiper";
 import { AboutComponent } from './about/about.component';
 import {routing} from "../app.routes";
+import {NguiParallaxScrollDirective, NguiParallaxScrollModule} from "@ngui/parallax-scroll";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {routing} from "../app.routes";
     FooterComponent,
     CarouselComponent,
     Parallax,
+    // NguiParallaxScrollDirective,
     AboutComponent,
 
 
@@ -32,6 +34,8 @@ import {routing} from "../app.routes";
     HttpModule,
     SwiperModule,
     routing,
+    NguiParallaxScrollModule,
+
     BrowserAnimationsModule
   ],
   providers: [PoloEventService],
